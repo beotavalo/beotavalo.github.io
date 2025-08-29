@@ -10,9 +10,22 @@ body {
 }
 
 #profile_pic {
-	float: right;
-	width: 130px;
+  width: 180px;         /* Ajusta el tamaño según lo que necesites */
+  height: 180px;
+  overflow: hidden;      /* Recorta todo lo que sobresalga */
+  border-radius: 50%;    /* Hace que el contenedor sea circular */
+  float: right;         /* La alinea a la derecha */
+  margin: 0 0 5px 5px;/* Espacio alrededor para que el texto no toque */
+  border: 4px solid #fff; /* (opcional) borde decorativo */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* (opcional) sombra elegante */
 }
+
+#profile_pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* Mantiene la proporción y recorta el exceso */
+}
+
 
 h1, h2 {
 	color: #000;
