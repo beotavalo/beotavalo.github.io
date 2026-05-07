@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+:root {
+	--accent: #2a8a3e;
+}
+
 body {
 	color: #333;
 	font-family: "Open Sans", sans-serif;
@@ -16,7 +20,7 @@ body {
   border-radius: 50%;    /* Hace que el contenedor sea circular */
   float: right;         /* La alinea a la derecha */
   margin: 0 0 5px 5px;/* Espacio alrededor para que el texto no toque */
-  border: 3px solid green; /* (opcional) borde decorativo */
+  border: 3px solid var(--accent); /* (opcional) borde decorativo */
   box-shadow: 0 0 10px rgba(0,0,0,0.2); /* (opcional) sombra elegante */
 }
 
@@ -61,7 +65,7 @@ li {
 }
 
 a {
-	color: green;
+	color: var(--accent);
 	text-decoration: none;
 }
 
@@ -70,7 +74,7 @@ a:active, a:focus, a:hover {
 }
 
 a:visited {
-	color: green;
+	color: var(--accent);
 }
 
 u {
@@ -87,5 +91,14 @@ footer {
 	color: #888;
 	font-size: 0.9rem;
 	text-align: center;
+}
+
+.cta {
+	display: inline-block;
+	margin-top: 0.5rem;
+	padding: 0.3rem 0.7rem;
+	border-left: 3px solid var(--accent);
+	font-weight: 600;
+	color: #000;
 }
 
