@@ -107,6 +107,11 @@ footer {
 	color: #000;
 }
 
+.cta a {
+	color: var(--accent);
+	font-weight: 600;
+}
+
 /* Writing section */
 .section-intro {
 	color: #666;
