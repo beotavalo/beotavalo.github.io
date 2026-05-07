@@ -69,7 +69,12 @@ a {
 	text-decoration: none;
 }
 
-a:active, a:focus, a:hover {
+p a:active, p a:focus, p a:hover,
+td a:active, td a:focus, td a:hover,
+li a:active, li a:focus, li a:hover,
+h3 a:active, h3 a:focus, h3 a:hover,
+footer a:active, footer a:focus, footer a:hover,
+.section-intro a:active, .section-intro a:focus, .section-intro a:hover {
 	border-bottom: solid 2px;
 }
 
@@ -100,5 +105,61 @@ footer {
 	border-left: 3px solid var(--accent);
 	font-weight: 600;
 	color: #000;
+}
+
+/* Writing section */
+.section-intro {
+	color: #666;
+	font-size: 0.95rem;
+	margin-bottom: 1.5rem;
+}
+
+.post-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.post-card {
+	display: block;
+	padding: 1.25rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	color: #333;
+	transition: border-color 0.2s;
+}
+
+.post-card:hover,
+.post-card:focus {
+	border-color: var(--accent);
+}
+
+.post-card .post-date {
+	display: block;
+	font-size: 0.8rem;
+	color: #888;
+	margin-bottom: 0.4rem;
+}
+
+.post-card .post-title {
+	display: block;
+	font-family: Palatino, "Palatino Linotype", Georgia, serif;
+	font-weight: 600;
+	font-size: 1.05rem;
+	color: #1a1a1a;
+	margin-bottom: 0.5rem;
+	line-height: 1.3;
+}
+
+.post-card .post-desc {
+	display: block;
+	font-size: 0.9rem;
+	color: #555;
+	line-height: 1.4;
+}
+
+@media (max-width: 520px) {
+	.post-grid { grid-template-columns: 1fr; }
 }
 
