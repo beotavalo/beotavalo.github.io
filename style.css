@@ -16,7 +16,7 @@ body {
   border-radius: 50%;    /* Hace que el contenedor sea circular */
   float: right;         /* La alinea a la derecha */
   margin: 0 0 5px 5px;/* Espacio alrededor para que el texto no toque */
-  border: 4px solid #fff; /* (opcional) borde decorativo */
+  border: 3px solid green; /* (opcional) borde decorativo */
   box-shadow: 0 0 10px rgba(0,0,0,0.2); /* (opcional) sombra elegante */
 }
 
